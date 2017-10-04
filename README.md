@@ -1,8 +1,9 @@
 # Arch Tips
 Some tips I use at work for my Arch Linux installations
 
+## System
 
-## Essential packages to download
+### Essential packages to download
 - `pacman -Sy yaourt`
 - `yaourt sublime-text`
 - `yaourt atom`
@@ -13,7 +14,13 @@ Some tips I use at work for my Arch Linux installations
 - `yaourt gtk-arc-flatabulous-theme-git`
 - `yaourt mariadb`
 
-## Sublime Text
+
+### Free creation for personnal Apache 
+`sudo chmod 777 -R /srv/http/`
+
+
+## Softwares
+### Sublime Text
 ```
 {
  "font_size": 15,
