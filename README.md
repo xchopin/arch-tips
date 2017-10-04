@@ -16,6 +16,9 @@ Some tips I use at work for my Arch Linux installations
 - `yaourt php-apache`
 - `yaourt composer`
 - `yaourt jdk9-openjdk`
+- `yaourt mongodb`
+- `yaourt php-mongodb`
+- `yaourt robo3t`
 
 ### Apache
 #### 1. Free creation for personnal Apache 
