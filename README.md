@@ -11,6 +11,7 @@ Some tips I use at work for my Arch Linux installations
 - `yaourt openconnect`
 - `yaourt owncloud`
 - `yaourt gtk-arc-flatabulous-theme-git`
+- `yaourt mariadb`
 
 ## Sublime Text
 ```
