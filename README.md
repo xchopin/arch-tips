@@ -8,6 +8,7 @@ Some tips I use at work for my Arch Linux installations
 - `yaourt sublime-text`
 - `yaourt atom`
 - `yaourt google-chrome`
+- `yaourt vivaldi`
 - `yaourt spotify`
 - `yaourt openconnect`
 - `yaourt owncloud`
