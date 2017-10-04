@@ -39,6 +39,13 @@ Include `conf/extra/php7_module.conf`
 #extension=mysqli.so
 ```
 
+### MariaDB
+#### Solve the issue of starting mariadb.service
+`sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql`
+
+#### Create your first user
+
+Log with `mysql -u root -p` (no password) then `CREATE USER 'USER'@'localhost' IDENTIFIED BY 'PASSWORD';`
 
 ## Softwares
 ### Sublime Text
