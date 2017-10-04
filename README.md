@@ -13,6 +13,9 @@ Some tips I use at work for my Arch Linux installations
 - `yaourt owncloud`
 - `yaourt gtk-arc-flatabulous-theme-git`
 - `yaourt mariadb`
+- `yaourt php-apache`
+- `yaourt composer`
+- `yaourt jdk9-openjdk`
 
 
 ### Free creation for personnal Apache 
