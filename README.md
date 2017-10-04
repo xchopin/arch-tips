@@ -21,9 +21,9 @@ Some tips I use at work for my Arch Linux installations
 #### 1. Free creation for personnal Apache 
 `sudo chmod 777 -R /srv/http/`
 #### 2. Enable PHP
-`subl /etc/httpd/conf/httpd.conf` then
+`subl /etc/httpd/conf/httpd.conf` then <br>
 A. comment `LoadModule mpm_event_module modules/mod_mpm_event.so` <br>
-B. uncomment `#LoadModule mpm_prefork_module modules/mod_mpm_prefork.so`
+B. uncomment `#LoadModule mpm_prefork_module modules/mod_mpm_prefork.so` <br>
 C. At the end of the LoadModule list:
 ```
 LoadModule php7_module modules/libphp7.so
