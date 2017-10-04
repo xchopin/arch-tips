@@ -11,3 +11,13 @@ Some tips I use at work for my Arch Linux installations
 - `yaourt openconnect`
 - `yaourt owncloud`
 - `yaourt gtk-arc-flatabulous-theme-git`
+
+## Sublime Text
+```
+{
+ "font_size": 15,
+ "theme": "Default.sublime-theme",
+ "line_padding_top": 6,
+ "line_padding_bottom": 6,
+}
+```
