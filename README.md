@@ -20,6 +20,7 @@ Some tips I use at work for my Arch Linux installations
 - `yaourt mongodb`
 - `yaourt php-mongodb`
 - `yaourt robo3t`
+- `yaourt pidgin`
 
 ### Apache
 #### 1. Free creation for personnal Apache 
