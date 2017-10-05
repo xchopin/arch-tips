@@ -4,24 +4,25 @@ Some tips I use at work for my Arch Linux installations
 ## System
 
 ### Essential packages to download
-- `pacman -Sy yaourt`
-- `yaourt sublime-text`
-- `yaourt atom`
-- `yaourt google-chrome`
-- `yaourt vivaldi`
-- `yaourt spotify`
-- `yaourt openconnect`
-- `yaourt owncloud`
-- `yaourt gtk-arc-flatabulous-theme-git`
-- `yaourt mariadb`
-- `yaourt php-apache`
-- `yaourt composer`
-- `yaourt jdk9-openjdk`
-- `yaourt mongodb`
-- `yaourt php-mongodb`
-- `yaourt robo3t`
-- `yaourt pidgin`
-- `yaourt docker`
+- `$ pacman -Sy yaourt`
+- `$ yaourt sublime-text`
+- `$ yaourt atom`
+- `$ yaourt google-chrome`
+- `$ yaourt vivaldi`
+- `$ yaourt spotify`
+- `$ yaourt openconnect`
+- `$ yaourt owncloud`
+- `$ yaourt gtk-arc-flatabulous-theme-git`
+- `$ yaourt mariadb`
+- `$ yaourt php-apache`
+- `$ yaourt composer`
+- `$ yaourt jdk9-openjdk`
+- `$ yaourt mongodb`
+- `$ yaourt php-mongodb`
+- `$ yaourt robo3t`
+- `$ yaourt pidgin`
+- `$ yaourt docker`
+- `$ yaourt htop`
 
 ### Gnome
 #### 1. Move window buttons to the left
