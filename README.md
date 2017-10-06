@@ -1,66 +1,81 @@
 # Arch Tips
-Some tips I use at work for my Arch Linux installations
+Some tips I use at work for my Arch Linux installations (Antergos)
 
-## System
+## I. System
+### 1. Install yaourt package manager
 
-### Essential packages to download
-- `$ pacman -Sy yaourt`
-- `$ yaourt sublime-text`
-- `$ yaourt atom`
-- `$ yaourt google-chrome`
-- `$ yaourt vivaldi`
-- `$ yaourt spotify`
-- `$ yaourt openconnect`
-- `$ yaourt owncloud`
-- `$ yaourt gtk-arc-flatabulous-theme-git`
-- `$ yaourt mariadb`
-- `$ yaourt php-apache`
-- `$ yaourt composer`
-- `$ yaourt jdk9-openjdk`
-- `$ yaourt mongodb`
-- `$ yaourt php-mongodb`
-- `$ yaourt robo3t`
-- `$ yaourt pidgin`
-- `$ yaourt docker`
-- `$ yaourt htop`
+> A. If Arch Linux from scratch
+``` bash
+$ git clone https://aur.archlinux.org/package-query.git
+$ cd package-query
+$ makepkg -si
+$ cd ..
+$ git clone https://aur.archlinux.org/yaourt.git
+$ cd yaourt
+$ makepkg -si
+$ cd ..
+```
+> B. If Antergos
 
-### Gnome
-#### 1. Move window buttons to the left
+`$ pacman -Sy yaourt`
+
+### 2. Essential packages to download
+- `$ yaourt -S sublime-text`
+- `$ yaourt -S atom`
+- `$ yaourt -S google-chrome`
+- `$ yaourt -S vivaldi`
+- `$ yaourt -S spotify`
+- `$ yaourt -S openconnect`
+- `$ yaourt -S owncloud`
+- `$ yaourt -S gtk-arc-flatabulous-theme-git`
+- `$ yaourt -S mariadb`
+- `$ yaourt -S php-apache`
+- `$ yaourt -S composer`
+- `$ yaourt -S jdk9-openjdk`
+- `$ yaourt -S mongodb`
+- `$ yaourt -S php-mongodb`
+- `$ yaourt -S robo3t`
+- `$ yaourt -S pidgin`
+- `$ yaourt -S docker`
+- `$ yaourt -S htop`
+
+### 3. Gnome
+#### A. Move window buttons to the left
 `$ gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'`
 
-### Apache
-#### 1. Free creation for personnal Apache 
+### 4. Apache
+#### A. Free creation for personnal Apache 
 `$ sudo chmod 777 -R /srv/http/`
-#### 2. Enable PHP
+#### B. Enable PHP
 `$ subl /etc/httpd/conf/httpd.conf` then <br>
-A. comment `LoadModule mpm_event_module modules/mod_mpm_event.so` <br>
-B. uncomment `#LoadModule mpm_prefork_module modules/mod_mpm_prefork.so` <br>
-C. At the end of the LoadModule list:
+1. comment `LoadModule mpm_event_module modules/mod_mpm_event.so` <br>
+2. uncomment `#LoadModule mpm_prefork_module modules/mod_mpm_prefork.so` <br>
+3. At the end of the LoadModule list:
 ```
 LoadModule php7_module modules/libphp7.so
 AddHandler php7-script php
 ```
-D. At the end of the Include list:
+4. At the end of the Include list:
 Include `conf/extra/php7_module.conf`
 
-#### 3. Enable MariaDB/MySQL
+#### C. Enable MariaDB/MySQL
 `$ subl /etc/php/php.ini` then uncomment
 ```
 #extension=pdo_mysql.so
 #extension=mysqli.so
 ```
 
-### MariaDB
-#### Solve the issue of starting mariadb.service
+### 5. MariaDB
+#### A. Solve the issue of starting mariadb.service
 `$ sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql`
 
-#### Create your first user
+#### B. Create your first user
 
 Log with `$ mysql -u root -p` (no password) then `CREATE USER 'USER'@'localhost' IDENTIFIED BY 'PASSWORD';`
 
 
-## Softwares
-### Sublime Text
+## II. Softwares
+### 1. Sublime Text
 ```
 {
  "font_size": 15,
