@@ -3,26 +3,36 @@ Some tips I use at work for my Arch Linux installations
 
 ## System
 
+### Install yaourt package manager
+``` bash
+git clone https://aur.archlinux.org/package-query.git
+cd package-query
+makepkg -si
+cd ..
+git clone https://aur.archlinux.org/yaourt.git
+cd yaourt
+makepkg -si
+cd ..
+```
 ### Essential packages to download
-- `$ pacman -Sy yaourt`
-- `$ yaourt sublime-text`
-- `$ yaourt atom`
-- `$ yaourt google-chrome`
-- `$ yaourt vivaldi`
-- `$ yaourt spotify`
-- `$ yaourt openconnect`
-- `$ yaourt owncloud`
-- `$ yaourt gtk-arc-flatabulous-theme-git`
-- `$ yaourt mariadb`
-- `$ yaourt php-apache`
-- `$ yaourt composer`
-- `$ yaourt jdk9-openjdk`
-- `$ yaourt mongodb`
-- `$ yaourt php-mongodb`
-- `$ yaourt robo3t`
-- `$ yaourt pidgin`
-- `$ yaourt docker`
-- `$ yaourt htop`
+- `$ yaourt -S sublime-text`
+- `$ yaourt -S atom`
+- `$ yaourt -S google-chrome`
+- `$ yaourt -S vivaldi`
+- `$ yaourt -S spotify`
+- `$ yaourt -S openconnect`
+- `$ yaourt -S owncloud`
+- `$ yaourt -S gtk-arc-flatabulous-theme-git`
+- `$ yaourt -S mariadb`
+- `$ yaourt -S php-apache`
+- `$ yaourt -S composer`
+- `$ yaourt -S jdk9-openjdk`
+- `$ yaourt -S mongodb`
+- `$ yaourt -S php-mongodb`
+- `$ yaourt -S robo3t`
+- `$ yaourt -S pidgin`
+- `$ yaourt -S docker`
+- `$ yaourt -S htop`
 
 ### Gnome
 #### 1. Move window buttons to the left
