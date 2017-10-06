@@ -67,6 +67,10 @@ Include `conf/extra/php7_module.conf`
 #extension=pdo_mysql.so
 #extension=mysqli.so
 ```
+#### D. Enable mod_rewrite
+`$ subl /etc/httpd/conf/httpd.conf` then <br>
+1. Change `AllowOverride none` into `AllowOverride All`
+2. Uncomment `#LoadModule rewrite_module modules/mod_rewrite.so`
 
 ### 5. MariaDB
 #### A. Solve the issue of starting mariadb.service
