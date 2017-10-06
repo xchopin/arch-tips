@@ -38,6 +38,9 @@ $ cd ..
 - `$ yaourt -S pidgin`
 - `$ yaourt -S docker`
 - `$ yaourt -S htop`
+- `$ yaourt -S bower`
+- `$ yaourt -S python2`
+- `$ yaourt -S npm`
 
 ### 3. Gnome
 #### A. Move window buttons to the left
