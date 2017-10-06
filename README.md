@@ -1,19 +1,24 @@
 # Arch Tips
-Some tips I use at work for my Arch Linux installations
+Some tips I use at work for my Arch Linux installations (Antergos)
 
 ## System
-
 ### Install yaourt package manager
+
+> If Arch Linux
 ``` bash
-git clone https://aur.archlinux.org/package-query.git
-cd package-query
-makepkg -si
-cd ..
-git clone https://aur.archlinux.org/yaourt.git
-cd yaourt
-makepkg -si
-cd ..
+$ git clone https://aur.archlinux.org/package-query.git
+$ cd package-query
+$ makepkg -si
+$ cd ..
+$ git clone https://aur.archlinux.org/yaourt.git
+$ cd yaourt
+$ makepkg -si
+$ cd ..
 ```
+> If Antergos
+
+- `$ pacman -Sy yaourt
+
 ### Essential packages to download
 - `$ yaourt -S sublime-text`
 - `$ yaourt -S atom`
