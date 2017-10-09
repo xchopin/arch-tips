@@ -61,16 +61,24 @@ AddHandler php7-script php
 4. At the end of the Include list:
 Include `conf/extra/php7_module.conf`
 
-#### C. Enable MariaDB/MySQL
+#### B. Enable mod_rewrite
+`$ subl /etc/httpd/conf/httpd.conf` then <br>
+1. Change `AllowOverride none` into `AllowOverride All`
+2. Uncomment `#LoadModule rewrite_module modules/mod_rewrite.so`
+
+#### C. Enable Virtual hosts
+`$ subl /etc/httpd/conf/httpd.conf` then uncomment `#Include conf/extra/httpd-vhosts.conf` <br>
+ next `$ subl /etc/httpd/conf/extra/httpd-vhosts.conf` then  write your VirtualHost afterward add your ServerName in `/etc/hosts`  finally restart Apache.
+
+
+_To check if it is ok : `apachectl configtest`_
+
+#### D. Enable MariaDB/MySQL
 `$ subl /etc/php/php.ini` then uncomment
 ```
 #extension=pdo_mysql.so
 #extension=mysqli.so
 ```
-#### D. Enable mod_rewrite
-`$ subl /etc/httpd/conf/httpd.conf` then <br>
-1. Change `AllowOverride none` into `AllowOverride All`
-2. Uncomment `#LoadModule rewrite_module modules/mod_rewrite.so`
 
 ### 5. MariaDB
 #### A. Solve the issue of starting mariadb.service
