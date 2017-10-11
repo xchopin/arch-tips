@@ -42,11 +42,19 @@ $ cd ..
 - `$ yaourt -S python2`
 - `$ yaourt -S npm`
 
-### 3. Gnome
+### 3. Turn on Bluetooth on login screen
+```
+$ sudo nano /etc/udev/rules.d/10-local.rules
+
+# Set bluetooth power up
+ACTION=="add", KERNEL=="hci0", RUN+="/usr/bin/hciconfig hci0 up"
+```
+
+### 4. Gnome
 #### A. Move window buttons to the left
 `$ gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'`
 
-### 4. Apache
+### 5. Apache
 #### A. Free creation for personnal Apache 
 `$ sudo chmod 777 -R /srv/http/`
 #### B. Enable PHP
