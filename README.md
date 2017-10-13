@@ -41,6 +41,8 @@ $ cd ..
 - `$ yaourt -S bower`
 - `$ yaourt -S python2`
 - `$ yaourt -S npm`
+- `$ yaourt --m-arg --skipchecksums --m-arg --skippgpcheck -S discord`
+
 
 ### 3. Turn on Bluetooth on login screen
 ```
